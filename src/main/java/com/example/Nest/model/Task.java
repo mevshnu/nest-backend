@@ -16,13 +16,13 @@ public class Task {
     private boolean taskStatus;
     private String taskDate;
     private String taskCompleteDate;
-    private String empId;
+    private int empId;
 
 
     public Task() {
     }
 
-    public Task(int id, String taskTitle, String taskDescription, boolean taskStatus, String taskDate, String taskCompleteDate, String empId) {
+    public Task(int id, String taskTitle, String taskDescription, boolean taskStatus, String taskDate, String taskCompleteDate, int empId) {
         this.id = id;
         this.taskTitle = taskTitle;
         this.taskDescription = taskDescription;
@@ -80,11 +80,11 @@ public class Task {
         this.taskCompleteDate = taskCompleteDate;
     }
 
-    public String getEmpId() {
+    public int getEmpId() {
         return empId;
     }
 
-    public void setEmpId(String empId) {
+    public void setEmpId(int empId) {
         this.empId = empId;
     }
 }
